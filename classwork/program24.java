@@ -1,9 +1,12 @@
 package classwork;
+
 import java.util.Scanner;
-
-
 import java.util.LinkedList;
-public class program21 {
+import java.util.ListIterator;
+
+
+
+public class program24 {
     public static void main(String [] Args) {
         LinkedList<String> array1 = new LinkedList<>();
         boolean work = true;
@@ -11,18 +14,23 @@ public class program21 {
         Scanner sc = new Scanner(System.in);
         System.out.printf("write you text:  ");
         String name = sc.nextLine();
-        String [] splitline = name.split("-");
-        switch (splitline[0]){
+        switch (name){
             case "print":
-            System.out.println(array1.remove((Integer.parseInt(splitline[1]))));
+            ListIterator<String> iterator= array1.listIterator(array1.size());
+            while (iterator.hasPrevious()){
+                System.out.println(iterator.previous());
+            }
             break;
             case "exit":
             System.out.println("nice");
             work = false;
+            case "revert":
+            array1.removeLast();
             break;
             default:
-            array1.add(Integer.parseInt(splitline[1]),splitline[0]);
-            sc.close();
+            array1.add(name);
+            sc.close(); 
+
         }
     }
 }

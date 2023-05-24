@@ -21,6 +21,7 @@ public class program14 {
             start = start + a - b;
         }
         System.out.println(counter);
+        sc.close();
     }
 
 }

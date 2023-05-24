@@ -22,6 +22,6 @@ public class program15 {
                         System.out.println("False");}}
 
         else { System.out.println("False");}
-        
+        sc.close();
     }
 }
