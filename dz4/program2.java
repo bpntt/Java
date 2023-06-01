@@ -6,36 +6,36 @@ public class program2 {
     public static void main(String [] args) {
         
     
-    LinkedList<Integer> ll = new LinkedList<>();
+    LinkedList<Integer> array1 = new LinkedList<>();
     for(int i = 0;i<10;i++)
     {
-        enqueue(ll, getRandomNumber()); // заполняем случайными числами
+        enqueue(array1, Random()); 
     }
-    System.out.println(ll);
+    System.out.println(array1);
 
-    System.out.println(dequeue(ll)); // удалили первый элемент
-    System.out.println(ll);
+    System.out.println(dequeue(array1)); 
+    System.out.println(array1);
 
-    System.out.println(first(ll)); // вывели первый элемент
-    System.out.println(ll); 
+    System.out.println(first(array1)); 
+    System.out.println(array1); 
 }
 
-    public static void enqueue(LinkedList<Integer> ll, int num) {// помещает элемент в конец очереди
+    public static void enqueue(LinkedList<Integer> ll, int num) {
         ll.addLast(num);
     }
 
-    public static int dequeue(LinkedList<Integer> ll) { // возвращает первый элемент из очереди и удаляет его
+    public static int dequeue(LinkedList<Integer> ll) {
         int num = ll.get(0);
         ll.remove(0);
         return num;
     }
 
-    public static int first(LinkedList<Integer> ll) { // возвращает первый элемент из очереди, не удаляя
+    public static int first(LinkedList<Integer> ll) { 
         int num = ll.get(0);
         return num;
     }
 
-    public static int getRandomNumber() { // генерирует случайное число
+    public static int Random() { 
         double x = (Math.random() * 99);
         int num = (int) x;
         return num;
