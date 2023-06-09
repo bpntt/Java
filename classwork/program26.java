@@ -6,7 +6,7 @@ import java.util.Queue;
 
 public class program26 {
     public static void name(String[] Args) {
-        Queue<String> stack = new LinkedList();
+        Queue<String> stack = new LinkedList<>();
         boolean work = true;
         while (work) {
             Scanner sc = new Scanner(System.in);

@@ -2,7 +2,7 @@ package classwork;
 import java.util.*;
 public class program31 {
     public static void main(String [] Args){
-        String line = "Мороз и солцнце день чудесный\n" + 
+        String line = "Мороз и солнце день чудесный\n" + 
         "Еще ты дремлешь друг прелестный\n" + 
         "Пора красавица проснись";
         line = line.replace(".", "");
