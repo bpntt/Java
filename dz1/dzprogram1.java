@@ -1,4 +1,4 @@
-
+package dz1;
 public class dzprogram1 {
     public static void main(String[] args) {
 

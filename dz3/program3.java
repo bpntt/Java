@@ -1,11 +1,6 @@
 package dz3;
-import java.util.List;
-import java.util.ArrayList;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Scanner;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
+
 public class program3 {
     public static void main(String [] args) {
         List<String> list = createList();

@@ -1,12 +1,6 @@
 package dz1;
 
-import java.util.Arrays;
 import java.util.Scanner;
-import java.util.Set;
-import java.util.HashSet;
- 
-
-
 
 public class dz2 {
     public static void main(String[] args) {
@@ -15,8 +9,8 @@ public class dz2 {
         System.out.printf("x: ");
         String name = sc.nextLine();
         int x = Integer.parseInt(name);
-        int a = 0;
-        int b = x -a;
+        /* int a = 0; */
+        /* int b = x - a; */
         int[] array1;
         array1 = new int[x];
         int i = 0;
@@ -29,10 +23,6 @@ public class dz2 {
             i++;
         }
 
-
-
-            sc.close();
-        }
+        sc.close();
     }
-
-
+}
