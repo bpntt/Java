@@ -12,9 +12,9 @@ public class veidingMachine {
     public void getbotleofwather(int volume) {
         for (product product : products) {
             if (product instanceof botle) {
-                if (((product) product).getVolume()) {
+                 
 
-                }
+                
             }
         }
     }
